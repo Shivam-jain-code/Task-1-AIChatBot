@@ -1,5 +1,5 @@
 """
-Simple AI Chatbot using Python and NLTK.
+Simple AI Chatbot using Python.
 
 This chatbot uses rule-based logic with basic NLP (tokenization) to
 understand user input and provide relevant responses. It can handle
@@ -8,12 +8,6 @@ greetings, answer basic questions, and exit when the user types "bye".
 
 import random
 import string
-
-import nltk
-from nltk.tokenize import word_tokenize
-
-# Download required NLTK data (only needed on first run)
-nltk.download("punkt_tab", quiet=True)
 
 # ── Response data ────────────────────────────────────────────────────────────
 
@@ -126,7 +120,7 @@ def normalize(text):
 
 def get_tokens(text):
     """Tokenize the normalized input text into a set of words."""
-    return set(word_tokenize(normalize(text)))
+    return set(normalize(text).split())
 
 
 def generate_greeting(tokens):

@@ -1,9 +1,9 @@
 # Task-1-AIChatBot
 
-A simple AI chatbot built with Python and NLTK. The chatbot uses rule-based
-logic with basic NLP (tokenization) to understand user input and respond
-accordingly. It can handle greetings, answer common questions, tell jokes, and
-more.
+A simple AI chatbot built with Python. The chatbot uses rule-based logic with
+basic NLP (tokenization) to understand user input and respond accordingly. It
+can handle greetings, answer common questions, tell jokes, and more. No
+external dependencies are required.
 
 ## Features
 
@@ -37,20 +37,7 @@ Task-1-AIChatBot/
    cd Task-1-AIChatBot
    ```
 
-2. **Create a virtual environment** (recommended)
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Running the Chatbot
+2. **Run the chatbot** (no install step needed — only the Python standard library is used)
 
 ```bash
 python chatbot.py
