@@ -75,7 +75,7 @@ def get_response(user_input):
 
     # --- Goodbye ---
     if cleaned == "bye":
-        return "Goodbye! Have a great day! 👋"
+        return None  # Signal to main loop to exit
 
     # --- Default fallback ---
     fallback_responses = [
@@ -102,10 +102,12 @@ def main():
             continue
 
         response = get_response(user_input)
-        print(f"ChatBot: {response}\n")
 
-        if user_input.lower().strip() == "bye":
+        if response is None:
+            print("ChatBot: Goodbye! Have a great day! 👋\n")
             break
+
+        print(f"ChatBot: {response}\n")
 
 
 if __name__ == "__main__":
