@@ -1,0 +1,6 @@
+# This chatbot uses only Python standard library modules.
+# No external dependencies are required.
+#
+# If you want to extend this project in the future, you can add:
+# nltk==3.9.1
+# scikit-learn==1.6.1
